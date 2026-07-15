@@ -2,6 +2,388 @@
 <html lang="en">
 <head>
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Athletic | Premium Women's Activewear Nepal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-black text-white text-xs tracking-widest uppercase py-2.5 px-4 text-center font-medium">
+        Free Delivery across Nepal on orders above Rs. 5,000 | Designed for High-Performance
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="text-2xl font-black tracking-tight text-stone-950">
+                AURA<span class="text-rose-600">.</span>ATHLETIC
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase text-stone-600">
+                <a href="#new-arrivals" class="hover:text-rose-600 transition-colors">New Arrivals</a>
+                <a href="#collections" class="hover:text-rose-600 transition-colors">Collections</a>
+                <a href="#about" class="hover:text-rose-600 transition-colors">Our Fit Philosophy</a>
+            </nav>
+
+            <!-- Actions (Search, Wishlist, Cart) -->
+            <div class="flex items-center space-x-6 text-stone-800">
+                <button class="hover:text-rose-600 transition-colors hidden sm:inline-block"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+                <button class="hover:text-rose-600 transition-colors relative">
+                    <i class="fa-regular fa-heart text-lg"></i>
+                    <span class="absolute -top-1.5 -right-1.5 bg-rose-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+                </button>
+                <button onclick="toggleCart()" class="hover:text-rose-600 transition-colors relative">
+                    <i class="fa-solid fa-bag-shopping text-lg"></i>
+                    <span id="cart-count" class="absolute -top-1.5 -right-1.5 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-stone-900 text-white min-h-[85vh] flex items-center">
+        <!-- Background Image with Dark Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQZeuJa9WQ6CVurLsb9fPXWiJId6OzinU2ehO-yqJ8CG4jOKgH6tsUen7_uf_Iqt1XVrtv1l2FL3aLp1LA" alt="Aesthetic Activewear Pose" class="w-full h-full object-cover object-center opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-900/70 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <span class="text-rose-500 font-bold tracking-widest uppercase text-xs sm:text-sm block mb-4">ENGINEERED FOR WOMEN (18+)</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-2xl leading-none mb-6">
+                Uncompromising Support.<br>Effortless Movement.
+            </h1>
+            <p class="text-stone-300 text-base sm:text-lg max-w-lg mb-10 leading-relaxed">
+                Premium gym, yoga, and outdoor performance wear tailored to support adult physiological forms with breathable, moisture-wicking technology. Built for the modern active woman in Nepal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#new-arrivals" class="bg-rose-600 hover:bg-rose-700 text-white text-sm tracking-wider uppercase font-bold py-4 px-8 rounded-full transition-all text-center">
+                    Shop The Collection
+                </a>
+                <a href="#collections" class="border border-white/40 hover:border-white text-white text-sm tracking-wider uppercase font-bold py-4 px-8 rounded-full transition-all text-center">
+                    Explore Fabrics
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="bg-white border-b border-stone-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex items-start space-x-4">
+                <div class="bg-rose-50 text-rose-600 p-3 rounded-2xl">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-stone-900 text-sm tracking-wide uppercase">Zero-Opacity Squat Proof</h4>
+                    <p class="text-xs text-stone-500 mt-1">Premium dense-knit fabrics designed specifically to maintain absolute opacity during deep squats and high-intensity moves.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="bg-rose-50 text-rose-600 p-3 rounded-2xl">
+                    <i class="fa-solid fa-wind text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-stone-900 text-sm tracking-wide uppercase">Breathable Compression</h4>
+                    <p class="text-xs text-stone-500 mt-1">Four-way stretch textiles that map natural muscle contours to deliver anatomical recovery support and sweat-wicking breathability.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="bg-rose-50 text-rose-600 p-3 rounded-2xl">
+                    <i class="fa-solid fa-truck-fast text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-stone-900 text-sm tracking-wide uppercase">Express delivery across nepal</h4>
+                    <p class="text-xs text-stone-500 mt-1">Quick and secured dispatch straight to your doorstep inside Kathmandu Valley (within 24 hours) and out-of-valley locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Shop Section -->
+    <section id="new-arrivals" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <p class="text-rose-600 font-bold text-xs tracking-widest uppercase mb-2">High-Performance Essentials</p>
+                <h2 class="text-3xl font-black tracking-tight text-stone-950">Shop Our Hot Releases</h2>
+            </div>
+            <div class="mt-4 md:mt-0 flex gap-4 text-xs font-bold uppercase tracking-wider">
+                <button class="text-stone-950 border-b-2 border-stone-950 pb-1">All Products</button>
+                <button class="text-stone-400 hover:text-stone-950 transition-colors pb-1">Sports Bras</button>
+                <button class="text-stone-400 hover:text-stone-950 transition-colors pb-1">Leggings</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Product 1 -->
+            <div class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                <div class="relative overflow-hidden bg-stone-100 aspect-[4/5]">
+                    <img src="https://static.independent.co.uk/2025/01/09/08/31090200-808750dd-0730-42fa-95d2-3a21db11582a.jpg" alt="Aura Lift Sports Bra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-black text-white text-[10px] tracking-widest uppercase font-extrabold px-3 py-1.5 rounded-full">Best Seller</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs text-stone-500 tracking-wider uppercase font-bold">Sets & Co-ords</span>
+                        <div class="flex items-center text-amber-500 text-xs">
+                            <i class="fa-solid fa-star"></i><span class="ml-1 text-stone-700 font-bold">4.9 (42)</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg leading-tight mb-2 group-hover:text-rose-600 transition-colors">Aura Lift Premium Sports Bra & Puffer Vest Set</h3>
+                    <p class="text-xs text-stone-500 mb-4 line-clamp-2">High-impact bust support engineered for adult athletes. Complete with moisture management technology and adaptive waist fit.</p>
+                    <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-stone-400 line-through">Rs. 6,800</span>
+                            <p class="text-lg font-extrabold text-stone-950">Rs. 5,499</p>
+                        </div>
+                        <button onclick="addToCart('Aura Premium Sports Bra Set', 5499)" class="bg-stone-900 hover:bg-rose-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                <div class="relative overflow-hidden bg-stone-100 aspect-[4/5]">
+                    <img src="https://www.bombshellsportswear.com/cdn/shop/collections/SEO_AllTops.jpg?v=1782429529&width=1368" alt="Sculpt Ribbed Cropped Tank" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-rose-600 text-white text-[10px] tracking-widest uppercase font-extrabold px-3 py-1.5 rounded-full">New In</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs text-stone-500 tracking-wider uppercase font-bold">Tops</span>
+                        <div class="flex items-center text-amber-500 text-xs">
+                            <i class="fa-solid fa-star"></i><span class="ml-1 text-stone-700 font-bold">4.8 (19)</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg leading-tight mb-2 group-hover:text-rose-600 transition-colors">V-Neck Cross Comfort Halter Set</h3>
+                    <p class="text-xs text-stone-500 mb-4 line-clamp-2">Premium dynamic stretch back design that ensures free shoulder mobility, perfect for cardio workouts and functional strength training.</p>
+                    <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-stone-400 line-through">Rs. 4,500</span>
+                            <p class="text-lg font-extrabold text-stone-950">Rs. 3,850</p>
+                        </div>
+                        <button onclick="addToCart('V-Neck Cross Comfort Halter Set', 3850)" class="bg-stone-900 hover:bg-rose-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                <div class="relative overflow-hidden bg-stone-100 aspect-[4/5]">
+                    <!-- Repeating Image 1 but showcasing alternative perspective (or another athlete look) -->
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQZeuJa9WQ6CVurLsb9fPXWiJId6OzinU2ehO-yqJ8CG4jOKgH6tsUen7_uf_Iqt1XVrtv1l2FL3aLp1LA" alt="Core Align Compression Leggings" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] tracking-widest uppercase font-extrabold px-3 py-1.5 rounded-full">Limited Stock</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs text-stone-500 tracking-wider uppercase font-bold">Bottoms</span>
+                        <div class="flex items-center text-amber-500 text-xs">
+                            <i class="fa-solid fa-star"></i><span class="ml-1 text-stone-700 font-bold">5.0 (58)</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg leading-tight mb-2 group-hover:text-rose-600 transition-colors">Core Align Ergonomic High-Rise Legging</h3>
+                    <p class="text-xs text-stone-500 mb-4 line-clamp-2">High-waisted compression structure offering premium support, with side tech pocket integration and non-slip inner security band.</p>
+                    <div class="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-stone-400 line-through">Rs. 3,900</span>
+                            <p class="text-lg font-extrabold text-stone-950">Rs. 3,200</p>
+                        </div>
+                        <button onclick="addToCart('Core Align High-Rise Legging', 3200)" class="bg-stone-900 hover:bg-rose-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cart Sliding Drawer -->
+    <div id="cart-drawer" class="fixed inset-y-0 right-0 max-w-md w-full bg-white z-50 shadow-2xl translate-x-full transition-transform duration-300 ease-in-out border-l border-stone-100 flex flex-col">
+        <div class="p-6 border-b border-stone-100 flex items-center justify-between">
+            <h3 class="text-lg font-bold text-stone-900">Your shopping bag</h3>
+            <button onclick="toggleCart()" class="text-stone-400 hover:text-stone-900"><i class="fa-solid fa-xmark text-xl"></i></button>
+        </div>
+        <!-- Cart Items -->
+        <div id="cart-items" class="p-6 overflow-y-auto flex-grow space-y-6">
+            <p class="text-sm text-stone-500 text-center py-12">Your shopping cart is empty.</p>
+        </div>
+        <!-- Checkout Footer -->
+        <div class="p-6 border-t border-stone-100 bg-stone-50">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-sm font-semibold text-stone-600">Est. Total</span>
+                <span id="cart-total" class="text-xl font-bold text-stone-950">Rs. 0</span>
+            </div>
+            <button onclick="checkoutAlert()" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-4 rounded-full uppercase tracking-wider text-sm transition-colors">
+                Proceed to Checkout (NPR)
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay backdrop for cart -->
+    <div id="cart-backdrop" onclick="toggleCart()" class="fixed inset-0 bg-black/40 z-40 hidden transition-opacity"></div>
+
+    <!-- Brand Story / Philosophy Section -->
+    <section id="about" class="bg-stone-950 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative rounded-3xl overflow-hidden aspect-[4/3] bg-stone-900">
+                <img src="https://static.independent.co.uk/2025/01/09/08/31090200-808750dd-0730-42fa-95d2-3a21db11582a.jpg" alt="Aesthetic Workout pose fit" class="w-full h-full object-cover opacity-60">
+            </div>
+            <div>
+                <p class="text-rose-500 font-bold text-xs tracking-widest uppercase mb-2">Empowering Real Strength</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Designed for Mature Bodies. Optimized for Strength.</h2>
+                <p class="text-stone-400 text-base leading-relaxed mb-6">
+                    Aura Athletic rejects standard fast-fashion curves. We design performance activewear for women who command support, longevity, and structural safety during intense athletics. Our collections are cut specifically to comfortably hold, support, and outline active adult silhouettes.
+                </p>
+                <ul class="space-y-4 text-stone-300">
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-rose-500 mr-3"></i> Zero-roll high waisted dynamic bands</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-rose-500 mr-3"></i> Hypoallergenic sweat-wicking materials</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-rose-500 mr-3"></i> High-density thread counts (Squat Proof certified)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 border-t border-stone-800/40 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <span class="text-xl font-black text-white tracking-tight">AURA<span class="text-rose-600">.</span>ATHLETIC</span>
+                <p class="mt-4 text-xs leading-relaxed">Luxury athletic wear specifically curated to meet performance expectations of women (18+) across Nepal.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-xs font-bold tracking-widest uppercase mb-4">Shop Online</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li><a href="#" class="hover:text-white transition-colors">Sports Bras</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Squat Proof Leggings</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Tops & Crops</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Matching Sets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xs font-bold tracking-widest uppercase mb-4">Customer Care</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li><a href="#" class="hover:text-white transition-colors">Nepal Delivery Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Returns & Fit Exchange</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Size Assistance Guide</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xs font-bold tracking-widest uppercase mb-4">Visit Us / Contact</h4>
+                <p class="text-xs leading-relaxed">Showroom: Jhamsikhel, Lalitpur, Nepal<br>Support: support@auraathletic.com.np<br>Phone: +977-1-4XXXXXX</p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-stone-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="text-stone-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="#" class="text-stone-400 hover:text-white transition-colors"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-stone-800/40 text-center text-[10px] tracking-wider uppercase">
+            © 2026 Aura Athletic Nepal. All rights reserved. Made for adult women.
+        </div>
+    </footer>
+
+    <!-- Interactive Functionality Script -->
+    <script>
+        let cart = [];
+
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            const backdrop = document.getElementById('cart-backdrop');
+            
+            if (drawer.classList.contains('translate-x-full')) {
+                drawer.classList.remove('translate-x-full');
+                backdrop.classList.remove('hidden');
+            } else {
+                drawer.classList.add('translate-x-full');
+                backdrop.classList.add('hidden');
+            }
+        }
+
+        function addToCart(productName, price) {
+            const existingItem = cart.find(item => item.name === productName);
+            if (existingItem) {
+                existingItem.qty += 1;
+            } else {
+                cart.push({ name: productName, price: price, qty: 1 });
+            }
+            updateCartUI();
+            toggleCart(); // Show cart after adding
+        }
+
+        function updateCartUI() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartCountElement = document.getElementById('cart-count');
+            const cartTotalElement = document.getElementById('cart-total');
+
+            // Count Items
+            const totalQty = cart.reduce((acc, item) => acc + item.qty, 0);
+            cartCountElement.textContent = totalQty;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = `<p class="text-sm text-stone-500 text-center py-12">Your shopping cart is empty.</p>`;
+                cartTotalElement.textContent = "Rs. 0";
+                return;
+            }
+
+            // Populate Items
+            cartItemsContainer.innerHTML = cart.map((item, index) => `
+                <div class="flex justify-between items-center bg-stone-50 p-4 rounded-2xl border border-stone-100">
+                    <div>
+                        <h4 class="text-sm font-bold text-stone-900">${item.name}</h4>
+                        <p class="text-xs text-rose-600 font-semibold mt-1">Rs. ${item.price.toLocaleString()}</p>
+                        <span class="text-[10px] text-stone-400">Quantity: ${item.qty}</span>
+                    </div>
+                    <button onclick="removeFromCart(${index})" class="text-stone-400 hover:text-rose-600 transition-colors">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            `).join('');
+
+            // Calculate Sum
+            const totalSum = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+            cartTotalElement.textContent = `Rs. ${totalSum.toLocaleString()}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function checkoutAlert() {
+            if (cart.length === 0) {
+                alert("Your cart is empty. Add activewear products first!");
+                return;
+            }
+            const totalSum = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+            alert(`Dhanyabad! Redirecting to secure Nepal Payment Gateway (eSewa / Khalti / Fonepay) for Rs. ${totalSum.toLocaleString()}...`);
+        }
+    </script>
+</body>
+</html>
+
 
 
 
